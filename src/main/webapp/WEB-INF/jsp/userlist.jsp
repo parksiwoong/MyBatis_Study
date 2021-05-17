@@ -27,16 +27,15 @@
 <div class="container">
     <table class="table table-hover">
         <tr>
-            <th>번호</th>
-            <th>제목</th>
-            <th>작성자</th>
-            <th>작성일</th>
+            <th>name</th>
+            <th>age</th>
+            <th>nameTest</th>
         </tr>
         <c:forEach var="board" items="${list}">
             <tr>
                 <td>${board.name}</td>
                 <td>${board.age}</td>
-
+                <td>${board.nameTest}</td>
             </tr>
         </c:forEach>
     </table>
