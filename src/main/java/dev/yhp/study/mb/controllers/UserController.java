@@ -2,17 +2,12 @@ package dev.yhp.study.mb.controllers;
 
 import dev.yhp.study.mb.model.UserVo;
 import dev.yhp.study.mb.services.UserService;
-import dev.yhp.study.mb.services.ValueService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.util.List;
 
 @Controller
@@ -32,5 +27,10 @@ public class UserController {
         mav.setViewName("userlist");
         mav.addObject("list",list);
         return mav;
+    }
+
+    @RequestMapping(value = "main", method = RequestMethod.GET)
+    public String view(){
+        return "main/index";
     }
 }

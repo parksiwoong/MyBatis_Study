@@ -1,7 +1,6 @@
 package dev.yhp.study.mb.services.impl;
 
 
-import dev.yhp.study.mb.mappers.BoardDao;
 import dev.yhp.study.mb.mappers.UserDao;
 import dev.yhp.study.mb.model.UserVo;
 import dev.yhp.study.mb.services.UserService;

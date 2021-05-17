@@ -3,6 +3,6 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="dev.yhp.study.mb.mappers.UserDao">
     <select id="listAll" resultType="UserVo">
-        SELECT * FROM TESTUSER
+        SELECT  * FROM TESTUSER
     </select>
 </mapper>
